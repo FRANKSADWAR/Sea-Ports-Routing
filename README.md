@@ -17,4 +17,20 @@ Using open source tools such as PostgreSQL, PostGIS, GeoServer, Django Framework
 8. Git & GitHub
 
 # Results
+>Authentication forms a basic part of the application which was developed using using the Django's authentication modules for the backend, 
+whose results are as below:
+![User Login](Voyager_Login.JPG)
 
+> Same as the log out views as below:
+![User Logged out](Logged_Out_user.JPG)
+
+### The Web GIS 
+![Theme](Admin_Theme.JPG)
+
+> Routing is determined using the Dijkstra's algorithm and A-start* technique for avoiding the obstacles i.e HRA and ECA areas. 
+
+> As shown below, navigation through the obstacle (in red) and avoiding the obstacle:
+![Through HRA](Navigation_through_HRA.JPG)
+
+> Avoiding the obstacles:
+![Avoiding the obstacles](Navigation_avoiding_HRA.JPG)
