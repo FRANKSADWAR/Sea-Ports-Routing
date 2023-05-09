@@ -12,6 +12,7 @@ Using open source tools such as PostgreSQL, PostGIS, GeoServer, Django Framework
 3. Python3
 4. JSON, GeoJSON
 5. Django + GDAL ---> GeoDjango
+6. Django rest-framework + Swagger
 6. LeafletJS + Geomann 
 7. Nginx, Gunicorn
 8. Git & GitHub
@@ -34,3 +35,31 @@ whose results are as below:
 
 > Avoiding the obstacles:
 ![Avoiding the obstacles](Navigation_avoiding_HRA.JPG)
+
+### API end-points
+Using the Django rest-framework 
+
+##### Sea Ports Table and Map
+The table below is used to display and search for port data that can be utilized in the API end-points.
+![Sea Routes Table](Sea_Ports_Table.JPG)
+
+##### API END Points
+The two API end-points exposed are as shown below, one can interact with thriugh Swagger:
+![API end-points](API_Page.JPG)
+
+> API Routes : standard API without avoiding obstacles;
+![API routes](APIQuery.JPG)
+
+> Results 
+![Results](APIResults.JPG)
+
+> Using the Avoid HRA API:
+![AvoidHRA](AvoidingHRA.JPG)
+
+> Results
+![ResultHRA](HRA_Results.JPG)
+
+## Areas of improvement
+1. Local storage caching: since the data is returned as JSON and hadled by AJAX, the data can be cached in each user's seasion, to avoid server overhed when querying for data
+2. Multi-processing/Threading: This can be leveraged also to improve the speed of the 
+queries in getting data. Fir example, the function that computes routes can be refactored to handles ruoting and getting the nearest vertex (K-NN) separately.
